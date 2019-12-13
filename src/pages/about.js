@@ -30,7 +30,7 @@ const About = () => (
   </Layout>
 )
 
-const text = " I’m a 21 y.o. (finally haha) software developer and student. I most recently completed a co-op at PowerAdvocate. I’m really excited about learning new technologies and am always willing to try my hand at new things, because who knows, I just might love it!";
+const text = " I’m a 21 y.o. (finally haha) software developer and computer science major. I most recently completed a co-op at PowerAdvocate. I’m really excited about learning new technologies and am always willing to try my hand at new things, because who knows, I just might love it!";
 const text2 = " I will be starting a co-op at Hubspot in the spring, and I will also be at Facebook this summer — busy, busy!";
 const text3 = " If I'm not conjoined to my laptop like I usually am during the school year, I'm usually cooking, hanging out with friends, trying new food places, or besting strangers at Tetris."
 

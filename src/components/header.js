@@ -71,6 +71,10 @@ const HeaderLink = styled(GatsbyLink)`
   text-decoration: none;
   color: black;
   border-bottom: 3px solid rgba(56, 206, 194, 0);
+  
+  @media (max-width: 768px) {
+    margin-bottom: 10px;
+  }
 
   :hover {
     border-bottom: 3px solid red;

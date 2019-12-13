@@ -31,6 +31,7 @@ const HomepageWrapper = styled(PageWrapper)`
   padding-top: 120px;
   padding-bottom: 120px;
   @media (max-width: 768px) {
+    padding-top: 10px;
     flex-direction: column;
   }
 
@@ -48,6 +49,7 @@ const TextWrapper = styled.div`
   width: 200%;
   @media (max-width: 768px) {
     width: 100%;
+    height: 35vh
   }
 `;
 

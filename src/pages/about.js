@@ -13,13 +13,13 @@ const About = () => (
       <ContentWrapper>
         <AllTextWrapper>
           <TextWrapper>
-            <Text><Red>&gt;</Red>{text}</Text>
+            <Text><Red>Right-Now &gt;</Red>{text}</Text>
           </TextWrapper>
           <TextWrapper>
-            <Text><Red>&gt;</Red>{text2}</Text>
+            <Text><Red>Coming-Up &gt;</Red>{text2}</Text>
           </TextWrapper>
           <TextWrapper>
-            <Text><Red>&gt;</Red>{text3}</Text>
+            <Text><Red>Free-Time &gt;</Red>{text3}</Text>
           </TextWrapper>
         </AllTextWrapper>
         <ImageWrapper>
@@ -30,12 +30,12 @@ const About = () => (
   </Layout>
 )
 
-const text = " I’m a 21-year-old (finally haha) software developer and student. I most recently completed a co-op at PowerAdvocate and will be starting a co-op at Hubspot in the spring! I will also be at Facebook this summer — busy busy!";
-const text2 = " I’m really excited about learning new technologies and am always willing to try my hand at new things, because who knows, I just might love it!";
-const text3 = " If I'm not conjoined to my laptop like I usually am during the school year, I'm usually cooking, hanging out with friends, out trying new food places, or trying to best strangers at Tetris."
+const text = " I’m a 21 y.o. (finally haha) software developer and student. I most recently completed a co-op at PowerAdvocate. I’m really excited about learning new technologies and am always willing to try my hand at new things, because who knows, I just might love it!";
+const text2 = " I will be starting a co-op at Hubspot in the spring, and I will also be at Facebook this summer — busy, busy!";
+const text3 = " If I'm not conjoined to my laptop like I usually am during the school year, I'm usually cooking, hanging out with friends, trying new food places, or besting strangers at Tetris."
 
 const TextWrapper = styled.div`
-  margin-bottom: 35px;
+  margin-bottom: 30px;
   display: flex;
 `;
 
@@ -53,11 +53,11 @@ const ContentWrapper = styled.div`
 `;
 
 const ImageWrapper = styled.div`
-  width: 100%;
-  margin-bottom: 1.45rem;
+  width: 110%;
   @media (max-width: 768px) {
     width: 80%;
   }
+  margin-left: 15px;
 `;
 
 const Red = styled.span`

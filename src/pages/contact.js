@@ -104,7 +104,7 @@ const LinkedInWrapper = styled(ImageWrapper)`
 `;
 
 const PageWrapper = styled.div`
-  height: 90vh;
+  min-height: 90vh;
 `;
 
 

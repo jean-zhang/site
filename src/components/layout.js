@@ -38,9 +38,8 @@ const Layout = ({ children }) => {
         <main>{children}</main>
         <footer>
           <FooterWrapper>
-          © {new Date().getFullYear()}, Personally made with
+          © {new Date().getFullYear()}, Personally made with <Red>&lt;3</Red>
           {` `}
-          <i class="em em-revolving_hearts" aria-label="REVOLVING HEARTS"></i>
           </FooterWrapper>
         </footer>
       </div>
@@ -51,6 +50,10 @@ const Layout = ({ children }) => {
 const FooterWrapper = styled.p`
   font-family: monospace;
   font-size: 16px;
+`;
+
+const Red = styled.span`
+  color: red;
 `;
 
 Layout.propTypes = {

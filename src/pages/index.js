@@ -46,6 +46,9 @@ const ImageWrapper = styled.div`
 
 const TextWrapper = styled.div`
   width: 200%;
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 const TagLine = styled.h1`

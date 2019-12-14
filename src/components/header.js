@@ -3,13 +3,14 @@ import PropTypes from "prop-types"
 import React from "react"
 import styled from "styled-components"
 import GatsbyLink from "gatsby-link"
+import { Red } from "../components/basecomponents"
 
-const Header = ({ siteTitle }) => (
+const Header = () => (
   <HeaderContainer>
     <HeaderWrapper>
         <Link to="/" style={{ color: `black`, textDecoration: `none`, }}>
           <NameText>
-            J<HeaderTextRed>.</HeaderTextRed>ZHANG
+            J<Red>.</Red>ZHANG
           </NameText>
         </Link>
         <HeaderLinkGroup>
@@ -49,10 +50,6 @@ const HeaderText = styled.h4`
   color: black;
   margin: 0;
   font-family: monospace;
-`;
-
-const HeaderTextRed = styled.span`
-  color: red;
 `;
 
 const HeaderLinkGroup = styled.div`

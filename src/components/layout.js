@@ -12,6 +12,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import Header from "./header"
 import "./layout.css"
 import styled from "styled-components"
+import { Red } from "../components/basecomponents"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -50,10 +51,6 @@ const Layout = ({ children }) => {
 const FooterWrapper = styled.p`
   font-family: monospace;
   font-size: 16px;
-`;
-
-const Red = styled.span`
-  color: red;
 `;
 
 Layout.propTypes = {

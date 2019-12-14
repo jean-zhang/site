@@ -2,7 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import styled from "styled-components"
-import { PageWrapper, TitleComponent, Text } from "../components/basecomponents"
+import { PageWrapper, Red, TitleComponent, Text } from "../components/basecomponents"
 import * as baby from "../images/baby.jpg";
 
 const About = () => (
@@ -13,13 +13,13 @@ const About = () => (
       <ContentWrapper>
         <AllTextWrapper>
           <TextWrapper>
-            <Text><Red>Right-Now &gt;</Red>{text}</Text>
+            <Text><Red>RIGHT-NOW &gt;</Red>{text}</Text>
           </TextWrapper>
           <TextWrapper>
-            <Text><Red>Coming-Up &gt;</Red>{text2}</Text>
+            <Text><Red>COMING-UP &gt;</Red>{text2}</Text>
           </TextWrapper>
           <TextWrapper>
-            <Text><Red>Free-Time &gt;</Red>{text3}</Text>
+            <Text><Red>FREE-TIME &gt;</Red>{text3}</Text>
           </TextWrapper>
         </AllTextWrapper>
         <ImageWrapper>
@@ -58,11 +58,6 @@ const ImageWrapper = styled.div`
     width: 80%;
   }
   margin-left: 15px;
-`;
-
-const Red = styled.span`
-  color: red;
-  font-weight: 800;
 `;
 
 export default About

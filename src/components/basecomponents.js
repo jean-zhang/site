@@ -36,5 +36,6 @@ export const Red = styled.span`
 `;
 
 export const PageWrapper = styled.div`
+  padding-top: 20px;
   min-height: 90vh;
 `;

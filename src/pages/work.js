@@ -3,7 +3,7 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import styled from "styled-components"
-import { TitleComponent, Text } from "../components/basecomponents"
+import { TitleComponent, Text, PageWrapper } from "../components/basecomponents"
 import * as palogo from "../images/palogo.svg";
 import * as bikebuslogo from "../images/bikebus.svg";
 import * as gamenight from "../images/game-night.svg";
@@ -24,22 +24,24 @@ const BBtext3 = "Coming into this project I had only cursory knowledge about UI/
 
 const PAGNtext1= "Developer";
 const PAGNtext2= "April 2019";
-const PAGNtext3= "This was a project with three other people and we created a small web application for our company's game night. It was the first time I had apply what I had learned so far on co-op in a different context, in addition to learning about how to set up a full application from scratch.";
+const PAGNtext3= "This was a project with three other people and we created a small web application for our company's game night. It was the first time I had to apply what I had learned so far on co-op in a different context, in addition to learning about how to set up a full application from scratch.";
 const PAGNlink = "https://github.com/jean-zhang/pa-game-night";
 
 const WMtext1= "Developer";
 const WMtext2= "April 2019";
-const WMtext3= "This was one of my very fist hackathons, and our team decided to try out hand at an IOS App. The idea was to let the user know what clothing/shoes to wear based on their temperature-to-clothing preference. Through this, I gained a very high level knowledge of Swift, XCode, and working within a completely new language.";
+const WMtext3= "This was one of my very fist hackathons, and our team decided to try our hand at an IOS App. The idea was to let the user know what clothing/shoes to wear based on their temperature-to-clothing preference. Through this, I gained a very high level knowledge of Swift, XCode, and working within a completely new language.";
 const WMlink = "https://github.com/jean-zhang/weather-man";
 
 const Work = () => {
   return <Layout>
     <SEO title="Work" />
-    <TitleComponent text="Work"/>
-    {renderFullLength("PowerAdvocate", PAtext1, PAtext2, PAtext3, palogo, false, 100, PAlink)}
-    {renderFullLength("BikeBus", BBtext1, BBtext2, BBtext3, bikebuslogo, true, 70)}
-    {renderFullLength("PA Game Night", PAGNtext1, PAGNtext2, PAGNtext3, gamenight, false, 100, PAGNlink)}
-    {renderFullLength("Weatherman 2.0", WMtext1, WMtext2, WMtext3, weatherman, true, 60, WMlink)}
+    <PageWrapper>
+      <TitleComponent text="Work"/>
+      {renderFullLength("PowerAdvocate", PAtext1, PAtext2, PAtext3, palogo, false, 100, PAlink)}
+      {renderFullLength("BikeBus", BBtext1, BBtext2, BBtext3, bikebuslogo, true, 70)}
+      {renderFullLength("PA Game Night", PAGNtext1, PAGNtext2, PAGNtext3, gamenight, false, 100, PAGNlink)}
+      {renderFullLength("Weatherman 2.0", WMtext1, WMtext2, WMtext3, weatherman, true, 60, WMlink)}
+    </PageWrapper>
   </Layout>
 }
 
@@ -85,8 +87,8 @@ const ProjectWrapper = styled.div`
   align-items: center;
   border: 2px solid white;
   flex-direction: ${props => (props.flip ? "row-reverse": "row")};
-  border-left-color: ${props => (props.flip ? "white": "red")};
-  border-right-color: ${props => (props.flip ? "red": "white")};
+  border-left: 5px solid ${props => (props.flip ? "white": "red")};
+  border-right: 5px solid ${props => (props.flip ? "red": "white")};
   padding-right: 20px;
 
   @media (max-width: 768px) {
@@ -140,8 +142,6 @@ const LinkWrapper = styled.span`
   }
 `;
 
-const Wrapper = styled.span`
-
-`;
+const Wrapper = styled.span``;
 
 export default Work

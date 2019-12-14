@@ -2,7 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import styled from "styled-components"
-import { SubTitle, TitleComponent, Text } from "../components/basecomponents"
+import { PageWrapper, SubTitle, TitleComponent, Text } from "../components/basecomponents"
 import * as gmail from "../images/gmail.svg";
 import * as linkedin from "../images/linkedin.svg";
 import * as github from "../images/github.svg";
@@ -54,13 +54,12 @@ const Contact = () => {
   </Layout>
 }
 
-
 const ItemWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  height: 80px;
+  padding: 10px;
 `;
 
 const TitlesWrapper = styled.div`
@@ -74,6 +73,9 @@ const TextWrapper = styled.div`
   display: flex;
   justify-content: space-evenly;
   margin-bottom: 40px;
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 
 const ImageWrapper = styled.div`
@@ -81,7 +83,7 @@ const ImageWrapper = styled.div`
   text-decoration: none;
   color: black;
   border-bottom: 3px solid rgba(56, 206, 194, 0);
-
+  max-width: 60px;
   :hover {
     border-bottom: 3px solid red;
   }
@@ -101,10 +103,6 @@ const Image = styled.img`
 
 const LinkedInWrapper = styled(ImageWrapper)`
   width: 40%;
-`;
-
-const PageWrapper = styled.div`
-  min-height: 90vh;
 `;
 
 

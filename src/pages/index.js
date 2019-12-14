@@ -14,7 +14,7 @@ const IndexPage = () => {
         <Typist cursor={{show: false}} avgTypingDelay={50}>
           <TagLine><Red>&gt;</Red> Hi! I'm Jean,
           <Typist.Delay ms={500} />
-          {` `}like the pants...
+          {` `}like the pants
           <Typist.Backspace count={17} delay={300} />
           {` `}a software developer and third year student at Northeastern University. </TagLine>
         </Typist>

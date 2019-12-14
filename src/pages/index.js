@@ -15,8 +15,8 @@ const IndexPage = () => {
           <TagLine><Red>&gt;</Red> Hi! I'm Jean,
           <Typist.Delay ms={500} />
           {` `}like the pants
-          <Typist.Backspace count={17} delay={300} />
-          {` `}a software developer and third year student at Northeastern University. </TagLine>
+          <Typist.Backspace count={14} delay={300} />
+          {` `}a software developer and third year undergrad at Northeastern University. </TagLine>
         </Typist>
       </TextWrapper>
       <ImageWrapper>

@@ -29,7 +29,7 @@ const PAGNlink = "https://github.com/jean-zhang/pa-game-night";
 
 const WMtext1= "Developer";
 const WMtext2= "April 2019";
-const WMtext3= "This was one of my very fist hackathons, and our team decided to try our hand at an IOS App. The idea was to let the user know what clothing/shoes to wear based on their temperature-to-clothing preference. Through this, I gained a very high level knowledge of Swift, XCode, and working within a completely new language.";
+const WMtext3= "This was one of my very first hackathons, and our team decided to try our hand at an IOS App. The idea was to let the user know what clothing/shoes to wear based on their temperature-to-clothing preference. Through this, I gained a very high level knowledge of Swift, XCode, and working within a completely new language.";
 const WMlink = "https://github.com/jean-zhang/weather-man";
 
 const Work = () => {

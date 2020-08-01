@@ -1,5 +1,4 @@
-# site
-Personal Website for 5D Fundamentals Course
+# Personal Website
 Demo: https://jeanzhang.netlify.app/
 
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
